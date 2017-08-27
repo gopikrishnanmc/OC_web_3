@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static' , filename='vendors/css/normalize.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static' , filename='vendors/css/grid.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static' , filename='vendors/css/ionicons.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static' , filename='vendors/css/animate.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/queries.css')}}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
+    <title>Home &mdash; OpenClinical.net</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='img/OC_logo.png')}}" class="logo" alt="OC logo"></a>
+                <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='img/OC_logo.png')}}" class="logo-none" alt="OC logo"></a>
+                <div class="main-nav js--main-nav">
+                    <ul class="main-nav-left">
+                        <li><a href="#features">Build a publet</a></li>
+                        <li><a href="#steps">Publish</a></li>
+                        <li><a href="#demos">Publets</a></li>
+                    </ul>
+                    <ul class="main-nav-right">
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Improving global health <br>through better care guidance and <br>medical knowledge sharing</h1>
+            <a class="btn btn-full" href="#">What is OpenClinical?</a>
+            <a class="btn btn-ghost js--scroll-to-features" href="#">Show me more</a>
+        </div>
+    </header>
+    <section class="section-features js--section-features" id="features">
+        <div class="row">
+            <h2>The OpenClinical approach</h2>
+            <p class="long-copy">OpenClinical.net is taking the next radical step, by providing tools and techniques to empower you and your organisation to share knowledge of best practice in specialist fields, create and publish applications, trial them at the point-of-care and translate new research into routine services.</p>
+        </div>
+
+        <div class="row js--wp-1">
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-book-outline icon-big"></i>
+                <h3>Expert knowledge</h3>
+                <p>Formalised best practice medical knowledge, provided by clinical experts.</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-paperplane-outline icon-big"></i>
+                <h3>Open publishing</h3>
+                <p>Machine-executable content, published open source and open access.</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-clock icon-big"></i>
+                <h3>Up to date</h3>
+                <p>Open discussion and feedback to develop up-to-the-minute consensus.</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-heart-outline icon-big"></i>
+                <h3>Improving care</h3>
+                <p>Access and use in-depth care guidance to inform your medical knowledge and processes.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-demos js--section-demos" id="demos">
+        <ul class="demos-showcase clearfix">
+            <li>
+                <figure class="demo-photo">
+                    <img src="{{url_for('static', filename='img/home_page/asthma.jpg')}}" alt="Asthma" class="masterTooltip" title="Asthma">
+                </figure>
+            </li>
+            <li>
+                <figure class="demo-photo">
+                    <img src="{{url_for('static', filename='img/home_page/breast_cancer.jpg')}}" alt="Breast cancer" class="masterTooltip" title="Breast cancer">
+                </figure>
+            </li>
+            <li>
+                <figure class="demo-photo">
+                    <img src="{{url_for('static', filename='img/home_page/head_injury.jpg')}}" alt="Head injury" class="masterTooltip" title="Head injury">
+                </figure>
+            </li>
+            <li>
+                <figure class="demo-photo">
+                    <img src="{{url_for('static', filename='img/home_page/stroke.jpg')}}" alt="Stroke" class="masterTooltip" title="Stroke">
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <section class="section-steps" id="steps">
+        <div class="row">
+            <h2>How to publish a publet ? &mdash; The OpenClinical Model</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 steps-box">
+                <img src="{{url_for('static', filename='img/home_page/publishing-lifecycle.png')}}" alt="Publishing lifecycle" class="publishing-process js--wp-2">
+            </div>
+            <div class="col span-1-of-2 steps-box">
+                <div class="publishing-steps">
+                    <div>1</div>
+                    <p>Sign up today and download the Tallis toolset.</p>
+                </div>
+                <div class="publishing-steps">
+                    <div>2</div>
+                    <p>Create publet.</p>
+                </div>
+                <div class="publishing-steps">
+                    <div>3</div>
+                    <p>Submit publet to OpenClinical repository.</p>
+                </div>
+                <div class="publishing-steps">
+                    <div>4</div>
+                    <p>Publish publet in Folios.</p>
+                </div>
+                <div class="publishing-steps">
+                    <div>5</div>
+                    <p>Submit publet for review.</p>
+                </div>
+                <div class="publishing-steps">
+                    <div>6</div>
+                    <p>Publish publet in Repertoire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-clients">
+        <div class="row">
+            <h2>Our clients</h2>
+        </div>
+        <div class="row js--wp-3">
+            <div class="col span-1-of-4 clients-box">
+                <figure class="client-photo">
+                    <img src="{{url_for('static', filename='img/home_page/partner1.png')}}" alt="partner1">
+                </figure>
+                <h3>Client 1</h3>
+                <div class="client-feature">
+                    <i class="ion-android-checkbox-outline"></i>
+                    <a href="#">Clinical trial</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 clients-box">
+                <figure class="client-photo">
+                    <img src="{{url_for('static', filename='img/home_page/partner2.png')}}" alt="partner2">
+                </figure>
+                <h3>Client 2</h3>
+                <div class="client-feature">
+                    <i class="ion-android-checkbox-outline"></i>
+                    <a href="#">Precision medicine</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 clients-box">
+                <figure class="client-photo">
+                    <img src="{{url_for('static', filename='img/home_page/partner3.png')}}" alt="partner3">
+                </figure>
+                <h3>Client 3</h3>
+                <div class="client-feature">
+                    <i class="ion-android-checkbox-outline"></i>
+                    <a href="#">Decision support evaluation</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 clients-box">
+                <figure class="client-photo">
+                    <img src="{{url_for('static', filename='img/home_page/partner4.png')}}" alt="partner4">
+                </figure>
+                <h3>Client 4</h3>
+                <div class="client-feature">
+                    <i class="ion-android-checkbox-outline"></i>
+                    <a href="#">Patient support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-testimonials">
+        <div class="row">
+            <h2>Client testimonials</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    <cite><img src="{{url_for('static', filename='img/home_page/customer-1.jpg')}}">Alberto Duncan</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                    <cite><img src="{{url_for('static', filename='img/home_page/customer-2.jpg')}}">Joana Silva</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                    <cite><img src="{{url_for('static', filename='img/home_page/customer-3.jpg')}}">Milton Chapman</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section class="section-form">
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                        <option value="friends" selected>Friends</option>
+                        <option value="search">Search engine</option>
+                        <option value="ad">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Newsletter</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked> Yes, please !
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Drop us a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2017 by OpenClinical.net. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='vendors/js/jquery.waypoints.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/script.js')}}"></script>
+
+</body>
+
+
+</html>
